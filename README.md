@@ -55,6 +55,14 @@ emitter.on('connectivity.change', console.log);
 emitter.start();
 ```
 
+Different configuration variables can be passed to this library when instanciating it in order to customize its behavior. Below is a list of the defined variables associated with their description.
+
+Variable | Type | Description
+-------- | ---- | -----------
+`backOffInitialDelay` | Number | The initial delay, in milliseconds, used by the used back-off strategy to trigger connectivity checks.
+`backOffMaxDelay` | Number | The maximum delay, in milliseconds, used by the used back-off strategy to trigger connectivity checks.
+`connectionTimeout` | Number | The connection timeout, in milliseconds, used when issuing requests to external services during the connectivity check.
+
 > See the [`examples`](./examples) directory for more information on how to use the library.
 
 ## 👀 See also
