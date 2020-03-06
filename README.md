@@ -81,7 +81,7 @@ Event                          | Description
 
 ### Proxy Support
 
-To specify an HTTP(S) proxy to use with this library, you must set the `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY` as environment variables on your process. The online check will then be performed using this proxy server.
+To make it work through proxies, you need to set up [`global-agent`](https://github.com/gajus/global-agent).
 
 ## 👀 See also
 

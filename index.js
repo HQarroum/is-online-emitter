@@ -6,10 +6,6 @@ const { networkInterfaces } = require('@leichtgewicht/network-interfaces');
 // The current connectivity information object.
 let connectivityInfo = {};
 
-// Bootstrap the global proxy agent.
-require('./lib/proxy');
-require('global-agent/bootstrap');
-
 /**
  * Performs the Internet connectivity check and updates
  * the connectivity information. This function will also
@@ -139,6 +135,7 @@ class IsOnlineEmitter extends EventEmitter {
    */
   reset() {
     try {
+      // Resetting the timer.
       this.fibonacciBackoff.reset();
       // Scheduling a connectivity check.
       this.fibonacciBackoff.backoff();
