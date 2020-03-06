@@ -6,7 +6,7 @@
 # is-online-event
 :zap: Receive events about gain and loss of Internet connectivity.
 
-![Green application](https://img.shields.io/badge/green-application-brightgreen.svg)
+![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
 
 Current version: **1.0.0**
 

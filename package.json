@@ -1,7 +1,7 @@
 {
   "name": "is-online-emitter",
   "version": "1.0.0",
-  "description": "⚡️ A connectivity monitoring agent for AWS Greengrass.",
+  "description": "⚡️ Receive events about gain and loss of Internet connectivity.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,10 @@
   ],
   "author": "Halim Qarroum <hqm.post@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HQarroum/is-online-emitter/issues"
+  },
+  "homepage": "https://github.com/HQarroum/is-online-emitter",
   "dependencies": {
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
