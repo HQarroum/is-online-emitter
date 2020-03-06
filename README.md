@@ -48,12 +48,16 @@ In order to use this library you need to instantiate it, subscribe to the events
 const IsOnlineEmitter = require('is-online-emitter');
 
 // Creating a new instance of the emitter.
-const emitter = new IsOnlineEmitter();
+const emitter = new IsOnlineEmitter({});
 // Listening to `connectivity.change` events.
 emitter.on('connectivity.change', console.log);
 // Starting the connectivity monitoring.
 emitter.start();
 ```
+
+> See the [`examples`](./examples) directory for more information on how to use the library.
+
+### Configuration
 
 Different configuration variables can be passed to this library when instanciating it in order to customize its behavior. Below is a list of the defined variables associated with their description.
 
@@ -63,7 +67,7 @@ Variable | Type | Description
 `backOffMaxDelay` | Number | The maximum delay, in milliseconds, used by the used back-off strategy to trigger connectivity checks.
 `connectionTimeout` | Number | The connection timeout, in milliseconds, used when issuing requests to external services during the connectivity check.
 
-> See the [`examples`](./examples) directory for more information on how to use the library.
+
 
 ## 👀 See also
 
