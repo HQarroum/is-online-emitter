@@ -5,9 +5,7 @@ const emitter = new IsOnlineEmitter();
 
 // Listening to `connectivity.change` events.
 emitter.on('connectivity.change', console.log);
-// Listening to `connectivity.check.scheduled` events.
-emitter.on('connectivity.check.scheduled', (delay) => {
-  console.log(`Next Internet connectivity event is scheduled in '${delay}ms'.`);
-});
+// Listening to `network.interface.change` events.
+emitter.on('network.interface.change', console.log);
 // Starting the connectivity monitoring.
 emitter.start();

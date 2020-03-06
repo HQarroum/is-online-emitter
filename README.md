@@ -38,7 +38,9 @@ npm install is-online-event --save
 
 This library allows developers and system administrators to be alerted upon connectivity changes to the public Internet. This can be useful if your applications is connectivity sensitive and needs to be alerted as soon as possible of a loss/gain of Internet connectivity.
 
-> This project is based on the [`is-online`](https://github.com/sindresorhus/is-online) library and adds an event interface on top of it in order to asynchronously notify your applications of gain and loss of Internet connectivity.
+This project is based on the [`is-online`](https://github.com/sindresorhus/is-online) library and adds an event interface on top of it in order to asynchronously notify your applications of gain and loss of Internet connectivity.
+
+> Note that it can take up to 10 seconds with the default paraneters to receive a notification about an Internet connectivity change once it has effectively changed
 
 ## 🛠 Usage
 
