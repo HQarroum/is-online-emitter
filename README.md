@@ -4,7 +4,7 @@
 </p><br /><br />
 
 # is-online-emitter
-:zap: Receive events about gain and loss of Internet connectivity.
+⚡️ Receive events about gain and loss of Internet connectivity.
 
 ![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
 
@@ -51,7 +51,6 @@ const IsOnlineEmitter = require('is-online-emitter');
 
 // Creating a new instance of the emitter.
 const emitter = new IsOnlineEmitter({});
-
 // Listening to `connectivity.change` events.
 emitter.on('connectivity.change', console.log);
 // Starting the connectivity monitoring.
@@ -84,7 +83,7 @@ Event                          | Description
 
 To make it work through proxies, you need to set up [`global-agent`](https://github.com/gajus/global-agent).
 
-> See the [`examples/using-http-proxies`](./examples/using-http-proxies) directory for an example on how to use HTT(S) proxies with the `is-online-emitter` library.
+> See the [`using-http-proxies`](./examples/using-http-proxies) directory for an example on how to use HTTP(S) proxies with the `is-online-emitter` library.
 
 ## 👀 See also
 
