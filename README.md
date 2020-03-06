@@ -3,7 +3,7 @@
   <img width="270" src="assets/icon.png" />
 </p><br /><br />
 
-# is-online-event
+# is-online-emitter
 :zap: Receive events about gain and loss of Internet connectivity.
 
 ![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
