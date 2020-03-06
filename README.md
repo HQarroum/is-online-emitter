@@ -45,7 +45,7 @@ This library allows developers and system administrators to be alerted upon conn
 In order to use this library you need to instantiate it, subscribe to the events you are interested in and start the connectivity montoring.
 
 ```js
-const IsOnlineEmitter = require('../..');
+const IsOnlineEmitter = require('is-online-emitter');
 
 // Creating a new instance of the emitter.
 const emitter = new IsOnlineEmitter();
@@ -54,6 +54,8 @@ emitter.on('connectivity.change', console.log);
 // Starting the connectivity monitoring.
 emitter.start();
 ```
+
+> See the [`examples`](./examples) directory for more information on how to use the library.
 
 ## 👀 See also
 
