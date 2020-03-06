@@ -1,0 +1,19 @@
+{
+  "name": "using-http-proxies",
+  "version": "1.0.0",
+  "description": "An example demonstrating how to use HTTP(S) proxies with the `is-online-emitter` library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "connectivity",
+    "proxy"
+  ],
+  "author": "Halim Qarroum <hqm.post@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "global-agent": "^2.1.8",
+    "is-online-emitter": "file:../.."
+  }
+}

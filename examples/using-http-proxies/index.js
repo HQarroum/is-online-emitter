@@ -1,4 +1,4 @@
-const IsOnlineEmitter = require('../..');
+const IsOnlineEmitter = require('is-online-emitter');
 
 // Bootstrap the global proxy agent.
 require('./proxy');
