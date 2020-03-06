@@ -24,7 +24,7 @@ Lead Maintainer: [Halim Qarroum](mailto:qarroumh@amazon.lu)
 ## 🚀 Install
 
 ```bash
-npm install is-online-event
+npm install is-online-event --save
 ```
 
 ## 🔖 Features
@@ -42,7 +42,18 @@ This library allows developers and system administrators to be alerted upon conn
 
 ## 🛠 Usage
 
-In order to use this library, you first need to 
+In order to use this library you need to instantiate it, subscribe to the events you are interested in and start the connectivity montoring.
+
+```js
+const IsOnlineEmitter = require('../..');
+
+// Creating a new instance of the emitter.
+const emitter = new IsOnlineEmitter();
+// Listening to `connectivity.change` events.
+emitter.on('connectivity.change', console.log);
+// Starting the connectivity monitoring.
+emitter.start();
+```
 
 ## 👀 See also
 
