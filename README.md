@@ -79,6 +79,10 @@ Event                          | Description
 `network.interface.change`     | A change of state in the network interfaces of the host has been detected. The payload associated with this event provides details on the state change.
 `connectivity.check.scheduled` | Fired when a connectivity check is being scheduled by the fibonacci back-off mechanism. The delay before the next check will be provided as a payload.
 
+### Proxy Support
+
+To specify an HTTP(S) proxy to use with this library, you must set the `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY` as environment variables on your process. The online check will then be performed using this proxy server.
+
 ## 👀 See also
 
  - The [is-online](https://github.com/sindresorhus/is-online) library on which this project is based.
