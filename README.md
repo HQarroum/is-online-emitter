@@ -73,8 +73,8 @@ Variable | Type | Description
 
 Different events are emitted by the `IsOnlineEmitter` class which are described below.
 
-Event | Description
--------- | ---- | -----------
+Event    | Description
+-------- | -----------
 `connectivity.change` | A change of state in Internet connectivity has been detected. Note that this event will be initially fired when you call the `.start()` method of the emitter.
 `network.interface.change` | A change of state in the network interfaces of the host has been detected. The payload associated with this event provides details on the state change.
 `connectivity.check.scheduled` | Fired when a connectivity check is being scheduled by the fibonacci back-off mechanism. The delay before the next check will be provided as a payload.
