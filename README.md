@@ -84,6 +84,8 @@ Event                          | Description
 
 To make it work through proxies, you need to set up [`global-agent`](https://github.com/gajus/global-agent).
 
+> See the [`examples/using-http-proxies`](./examples/using-http-proxies) directory for an example on how to use HTT(S) proxies with the `is-online-emitter` library.
+
 ## 👀 See also
 
  - The [is-online](https://github.com/sindresorhus/is-online) library on which this project is based.
