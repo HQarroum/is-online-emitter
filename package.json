@@ -1,0 +1,35 @@
+{
+  "name": "is-online-emitter",
+  "version": "1.0.0",
+  "description": "⚡️ A connectivity monitoring agent for AWS Greengrass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "find . -iname node_modules -exec rm -rf {} \\; 2> /dev/null || true"
+  },
+  "repository": {
+    "type": "git+https",
+    "url": "https://github.com/HQarroum/is-online-emitter.git"
+  },
+  "keywords": [
+    "internet",
+    "is-online",
+    "online",
+    "internet-connection",
+    "detect",
+    "reachability",
+    "connectivity",
+    "network-monitoring"
+  ],
+  "author": "Halim Qarroum <hqm.post@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@leichtgewicht/network-interfaces": "^1.0.3",
+    "backoff": "^2.5.0",
+    "global-agent": "^2.1.8",
+    "is-online": "^8.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
