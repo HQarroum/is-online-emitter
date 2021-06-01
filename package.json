@@ -30,9 +30,9 @@
   "dependencies": {
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
-    "is-online": "^8.2.1"
+    "is-online": "^9.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.27.0"
   }
 }
