@@ -1,6 +1,6 @@
 {
   "name": "is-online-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⚡️ Receive events about gain and loss of Internet connectivity.",
   "main": "index.js",
   "scripts": {
