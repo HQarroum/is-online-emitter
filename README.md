@@ -8,7 +8,7 @@
 
 ![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
 
-Current version: **1.0.2**
+Current version: **2.0.0**
 
 Lead Maintainer: [Halim Qarroum](mailto:qarroumh@amazon.lu)
 
