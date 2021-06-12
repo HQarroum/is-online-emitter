@@ -6,7 +6,7 @@
 # is-online-emitter
 > Emitter interface for gain and loss of Internet connectivity.
 
-[![Build Status](https://travis-ci.org/HQarroum/middleware-chain.svg?branch=master)](https://travis-ci.org/HQarroum/middleware-chain)
+[![Build Status](https://travis-ci.org/HQarroum/is-online-emitter.svg?branch=master)](https://travis-ci.org/HQarroum/is-online-emitter)
 
 Current version: **2.0.0**
 
