@@ -1,10 +1,11 @@
 {
   "name": "is-online-emitter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "⚡️ Receive events about gain and loss of Internet connectivity.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint",
     "clean": "find . -iname node_modules -exec rm -rf {} \\; 2> /dev/null || true"
   },
   "repository": {
@@ -30,9 +31,9 @@
   "dependencies": {
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
-    "is-online": "^9.0.0"
+    "is-online": "^9.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.27.0"
+    "eslint": "^7.28.0"
   }
 }

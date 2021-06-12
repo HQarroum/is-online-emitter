@@ -8,7 +8,7 @@
 
 ![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
 
-Current version: **1.0.1**
+Current version: **1.0.2**
 
 Lead Maintainer: [Halim Qarroum](mailto:qarroumh@amazon.lu)
 
@@ -29,10 +29,10 @@ npm install is-online-event --save
 
 ## 🔖 Features
 
- - Monitors Internet connectivity notifies you of connectivity changes.
- - Monitors for changes on network interfaces to automatically trigger connectivity checks.
- - Uses fibonacci back-off to periodically check for Internet connectivity.
- - Supports Internet connectivity checks using a HTTP(S) proxy.
+- Monitors Internet connectivity notifies you of connectivity changes.
+- Monitors for changes on network interfaces to automatically trigger connectivity checks.
+- Uses fibonacci back-off to periodically check for Internet connectivity.
+- Supports Internet connectivity checks using a HTTP(S) proxy.
 
 ## 🔰 Description
 
@@ -87,4 +87,4 @@ To make it work through proxies, you need to set up [`global-agent`](https://git
 
 ## 👀 See also
 
- - The [is-online](https://github.com/sindresorhus/is-online) library on which this project is based.
+- The [is-online](https://github.com/sindresorhus/is-online) library on which this project is based.
