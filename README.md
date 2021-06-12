@@ -6,7 +6,7 @@
 # is-online-emitter
 > Emitter interface for gain and loss of Internet connectivity.
 
-![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
+[![Build Status](https://travis-ci.org/HQarroum/middleware-chain.svg?branch=master)](https://travis-ci.org/HQarroum/middleware-chain)
 
 Current version: **2.0.0**
 
