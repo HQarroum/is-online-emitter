@@ -1,7 +1,7 @@
 {
   "name": "is-online-emitter",
   "version": "2.0.0",
-  "description": "⚡️ Receive events about gain and loss of Internet connectivity.",
+  "description": "⚡️ Emitter interface for gain and loss of Internet connectivity.",
   "main": "./dist/index.cjs",
   "type": "module",
   "module": "./index.js",

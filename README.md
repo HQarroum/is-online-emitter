@@ -4,7 +4,7 @@
 </p><br /><br />
 
 # is-online-emitter
-⚡️ Receive events about gain and loss of Internet connectivity.
+> Emitter interface for gain and loss of Internet connectivity.
 
 ![PR Welcome](https://img.shields.io/badge/PR-welcome-brightgreen.svg)
 
