@@ -47,7 +47,7 @@ This project is based on the [`is-online`](https://github.com/sindresorhus/is-on
 In order to use this library you need to instantiate it, subscribe to the events you are interested in and start the connectivity montoring.
 
 ```js
-const IsOnlineEmitter = require('is-online-emitter');
+import IsOnlineEmitter from 'is-online-emitter';
 
 // Creating a new instance of the emitter.
 const emitter = new IsOnlineEmitter({});
