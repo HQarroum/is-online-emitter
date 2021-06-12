@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "An example demonstrating how to use HTTP(S) proxies with the `is-online-emitter` library.",
   "main": "index.js",
+  "type": "module",
+  "module": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

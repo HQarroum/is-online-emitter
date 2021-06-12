@@ -2,12 +2,28 @@
   "name": "is-online-emitter",
   "version": "1.0.2",
   "description": "⚡️ Receive events about gain and loss of Internet connectivity.",
-  "main": "index.js",
+  "main": "./dist/index.cjs",
+  "type": "module",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
+    "build": "npx rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint",
     "clean": "find . -iname node_modules -exec rm -rf {} \\; 2> /dev/null || true"
   },
+  "files": [
+    "index.js",
+    "dist",
+    "assets",
+    "examples"
+  ],
   "repository": {
     "type": "git+https",
     "url": "https://github.com/HQarroum/is-online-emitter.git"
@@ -31,7 +47,8 @@
   "dependencies": {
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
-    "is-online": "^9.0.1"
+    "is-online": "^9.0.1",
+    "rollup": "^2.51.2"
   },
   "devDependencies": {
     "eslint": "^7.28.0"

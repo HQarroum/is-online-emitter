@@ -1,4 +1,4 @@
-const IsOnlineEmitter = require('../..');
+import IsOnlineEmitter from '../../index.js';
 
 // Creating a new instance of the emitter.
 const emitter = new IsOnlineEmitter();

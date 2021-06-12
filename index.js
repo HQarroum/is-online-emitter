@@ -1,7 +1,7 @@
-const EventEmitter          = require('events').EventEmitter;
-const isOnline              = require('is-online');
-const backoff               = require('backoff');
-const { networkInterfaces } = require('@leichtgewicht/network-interfaces');
+import EventEmitter from 'events';
+import isOnline from 'is-online';
+import backoff from 'backoff';
+import ni from '@leichtgewicht/network-interfaces';
 
 // The current connectivity information object.
 let connectivityInfo = {};
@@ -104,7 +104,7 @@ class IsOnlineEmitter extends EventEmitter {
         // Subscribing to ready events.
         this.fibonacciBackoff.on('ready', this.onReady);
         // Subscribing to network interface change events.
-        networkInterfaces.on('change', this.onNetworkInterfacesChange);
+        ni.networkInterfaces.on('change', this.onNetworkInterfacesChange);
         // Scheduling a connectivity check.
         this.fibonacciBackoff.backoff();
       } catch (e) {
@@ -122,7 +122,7 @@ class IsOnlineEmitter extends EventEmitter {
     // Un-subscribing from ready events.
     this.fibonacciBackoff.removeListener('ready', this.onReady);
     // Un-subscribing from network interface change events.
-    networkInterfaces.removeListener('change', this.onNetworkInterfacesChange);
+    ni.networkInterfaces.removeListener('change', this.onNetworkInterfacesChange);
     // Stopping the back-off timer.
     this.fibonacciBackoff.reset();
     // Reset the `connectivityInfo`.
@@ -145,4 +145,4 @@ class IsOnlineEmitter extends EventEmitter {
   }
 }
 
-module.exports = IsOnlineEmitter;
+export default IsOnlineEmitter;

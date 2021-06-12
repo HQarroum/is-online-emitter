@@ -1,8 +1,8 @@
-const IsOnlineEmitter = require('is-online-emitter');
+import IsOnlineEmitter from '../../index.js';
+import { bootstrap } from 'global-agent';
+import './proxy/index.js';
 
-// Bootstrap the global proxy agent.
-require('./proxy');
-require('global-agent/bootstrap');
+bootstrap();
 
 // Creating a new instance of the emitter.
 const emitter = new IsOnlineEmitter();
