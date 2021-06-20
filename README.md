@@ -25,7 +25,7 @@ Lead Maintainer: [Halim Qarroum](mailto:qarroumh@amazon.lu)
 ## 🚀 Install
 
 ```bash
-npm install is-online-event --save
+npm install is-online-emitter --save
 ```
 
 ## 🔖 Features
@@ -41,7 +41,7 @@ This library allows developers and system administrators to be alerted upon conn
 
 This project is based on the [`is-online`](https://github.com/sindresorhus/is-online) library and adds an event interface on top of it in order to asynchronously notify your applications of gain and loss of Internet connectivity.
 
-> Note that it can take up to 10 seconds with the default paraneters to receive a notification about an Internet connectivity change once it has effectively changed
+> Note that it can take up to 10 seconds with the default parameters to receive a notification about an Internet connectivity change once it has effectively changed
 
 ## 🛠 Usage
 
