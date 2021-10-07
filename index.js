@@ -19,9 +19,7 @@ const checkConnectivity = function () {
     if (online !== connectivityInfo.status) {
       // There was a connectivity change.
       connectivityInfo.status = online;
-      // Adding the last check date.
       connectivityInfo.updatedAt = new Date().toISOString();
-      // Signaling the connectivity change.
       this.emit('connectivity.change', connectivityInfo);
     }
     return (online);
@@ -49,13 +47,12 @@ class IsOnlineEmitter extends EventEmitter {
     // The back-off strategy maximum delay.
     this.maxDelay = !isNaN(parseInt(this.opts.backOffMaxDelay)) ?
       parseInt(this.opts.backOffMaxDelay) : 60000;
-    //  Creating and configuring the fibonacci
+    // Creating and configuring the fibonacci
     // backoff strategy.
     this.fibonacciBackoff = backoff.fibonacci({
       initialDelay: this.initialDelay,
       maxDelay: this.maxDelay
     });
-    // Referencing the `checkConnectivity` function.
     this.checkConnectivity = checkConnectivity.bind(this);
     // Emitted when a backoff operation is done.
     // Signals that the connectivity check operation should be done.
@@ -73,9 +70,7 @@ class IsOnlineEmitter extends EventEmitter {
     // Notifies changes made to network interfaces in order
     // to trigger Internet connectivity checks.
     this.onNetworkInterfacesChange = (e) => {
-      // Re-setting the backoff delay.
       this.reset();
-      // Notifying users of a network interface change.
       this.emit('network.interface.change', e);
     };
     // Emitted when a backoff operation is started.
