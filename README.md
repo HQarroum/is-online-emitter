@@ -11,13 +11,10 @@
 
 Current version: **2.0.0**
 
-Lead Maintainer: [Halim Qarroum](mailto:qarroumh@amazon.lu)
-
 ## 📋 Table of contents
 
 - [Installation](#-install)
 - [Features](#-features)
-- [Metrics](#-metrics)
 - [Description](#-description)
 - [Usage](#-usage)
 - [See also](#-see-also)
