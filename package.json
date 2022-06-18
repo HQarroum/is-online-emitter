@@ -48,7 +48,7 @@
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
     "is-online": "^9.0.1",
-    "rollup": "^2.74.1"
+    "rollup": "^2.75.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0"
