@@ -15,7 +15,7 @@
   "author": "Halim Qarroum <hqm.post@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "global-agent": "^2.2.0",
+    "global-agent": "^3.0.0",
     "is-online-emitter": "file:../.."
   }
 }

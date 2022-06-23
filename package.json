@@ -1,17 +1,10 @@
 {
   "name": "is-online-emitter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "⚡️ Emitter interface for gain and loss of Internet connectivity.",
   "main": "./dist/index.cjs",
   "type": "module",
   "module": "./index.js",
-  "exports": {
-    ".": {
-      "import": "./index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "build": "npx rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -47,10 +40,10 @@
   "dependencies": {
     "@leichtgewicht/network-interfaces": "^1.0.3",
     "backoff": "^2.5.0",
-    "is-online": "^9.0.1",
-    "rollup": "^2.75.1"
+    "is-online": "^10.0.0",
+    "rollup": "^2.75.7"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^8.18.0"
   }
 }
