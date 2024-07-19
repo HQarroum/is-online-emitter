@@ -10,6 +10,8 @@ let connectivityInfo = {};
  * Performs the Internet connectivity check and updates
  * the connectivity information. This function will also
  * trigger events if the connectivity changed.
+ * @returns a promise that resolves to a boolean value
+ * indicating the current Internet connectivity state.
  */
 const checkConnectivity = function () {
   const timeout = !isNaN(parseInt(this.opts.connectionTimeout)) ?
@@ -44,16 +46,20 @@ class IsOnlineEmitter extends EventEmitter {
     // The back-off strategy initial delay.
     this.initialDelay = !isNaN(parseInt(this.opts.backOffInitialDelay)) ?
       parseInt(this.opts.backOffInitialDelay) : 5000;
+
     // The back-off strategy maximum delay.
     this.maxDelay = !isNaN(parseInt(this.opts.backOffMaxDelay)) ?
       parseInt(this.opts.backOffMaxDelay) : 60000;
+
     // Creating and configuring the fibonacci
     // backoff strategy.
     this.fibonacciBackoff = backoff.fibonacci({
       initialDelay: this.initialDelay,
       maxDelay: this.maxDelay
     });
+
     this.checkConnectivity = checkConnectivity.bind(this);
+
     // Emitted when a backoff operation is done.
     // Signals that the connectivity check operation should be done.
     this.onReady = () => {
@@ -67,12 +73,14 @@ class IsOnlineEmitter extends EventEmitter {
         }
       });
     };
+
     // Notifies changes made to network interfaces in order
     // to trigger Internet connectivity checks.
     this.onNetworkInterfacesChange = (e) => {
       this.reset();
       this.emit('network.interface.change', e);
     };
+    
     // Emitted when a backoff operation is started.
     // Signals to the client how long the next backoff delay will be.
     this.onBackoff = (_, delay) => this.emit('connectivity.check.scheduled', delay);

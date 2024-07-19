@@ -34,7 +34,7 @@ npm install is-online-emitter --save
 
 ## 🔰 Description
 
-This library allows developers and system administrators to be alerted upon connectivity changes to the public Internet. This can be useful if your applications is connectivity sensitive and needs to be alerted as soon as possible of a loss/gain of Internet connectivity. To do so, the `IsOnlineEmitter` class provided by this library implements an `EventEmitter` interface dedicated to the event delivery.
+This library enables developers and system administrators to be alerted upon connectivity changes to the public Internet. This can be useful if your applications is connectivity sensitive and needs to be alerted as soon as possible of a loss/gain of Internet connectivity. To do so, the `IsOnlineEmitter` class provided by this library implements an `EventEmitter` interface dedicated to the event delivery.
 
 This project is based on the [`is-online`](https://github.com/sindresorhus/is-online) library and adds an event interface on top of it in order to asynchronously notify your applications of gain and loss of Internet connectivity.
 
