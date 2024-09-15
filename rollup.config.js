@@ -1,4 +1,4 @@
-import description from './package.json';
+import description from './package.json' assert { type: 'json' };
 
 export default [
 	{
